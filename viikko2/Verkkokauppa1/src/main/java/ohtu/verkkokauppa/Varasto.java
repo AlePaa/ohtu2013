@@ -1,8 +1,8 @@
 package ohtu.verkkokauppa;
 
+import java.util.*;
 import ohtu.verkkokauppa.rajapinnat.Kirjanpitaja;
 import ohtu.verkkokauppa.rajapinnat.Makasiini;
-import java.util.*;
 
 public class Varasto implements Makasiini {
 
