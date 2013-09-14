@@ -1,11 +1,15 @@
 package ohtu.verkkokauppa;
 
 import ohtu.verkkokauppa.rajapinnat.Kirjanpitaja;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Pankki {
 
     private Kirjanpitaja kirjanpito;
-
+    
+    @Autowired
     public Pankki(Kirjanpitaja k) {
         kirjanpito = k;
     }

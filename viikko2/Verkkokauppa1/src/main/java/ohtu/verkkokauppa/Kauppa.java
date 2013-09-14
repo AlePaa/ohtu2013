@@ -1,7 +1,10 @@
 package ohtu.verkkokauppa;
 
 import ohtu.verkkokauppa.rajapinnat.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Kauppa {
 
     private Makasiini varasto;
@@ -9,7 +12,8 @@ public class Kauppa {
     private Kori ostoskori;
     private ViiteGen viitegeneraattori;
     private String kaupanTili;
-
+    
+    @Autowired
     public Kauppa(Makasiini m, Pankki p, ViiteGen g) {
         varasto = m;
         pankki = p;
