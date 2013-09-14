@@ -1,6 +1,8 @@
 package ohtu.verkkokauppa;
 
-public class Viitegeneraattori {
+import ohtu.verkkokauppa.rajapinnat.ViiteGen;
+
+public class Viitegeneraattori implements ViiteGen {
 
     private static Viitegeneraattori instanssi;
 
@@ -18,6 +20,7 @@ public class Viitegeneraattori {
         seuraava = 1;    
     }
     
+    @Override
     public int uusi(){
         return seuraava++;
     }
