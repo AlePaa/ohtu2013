@@ -1,7 +1,7 @@
 package ohtu.verkkokauppa;
 
-import ohtu.verkkokauppa.rajapinnat.Kori;
 import java.util.ArrayList;
+import ohtu.verkkokauppa.rajapinnat.Kori;
 
 public class Ostoskori implements Kori {
 
